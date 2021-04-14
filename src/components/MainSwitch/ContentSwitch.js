@@ -18,7 +18,7 @@ const ContentSwitch = () => {
     return (
         <main>
             <Switch>
-                <Route component={WelcomeViev} exact="true" path="/" />
+                <Route component={WelcomeViev} exact={true} path="/" />
                 <Route component={StartViev} path="/start" />
                 <Route component={BranchViev} path="/category1" />
                 <Route component={BranchViev} path="/category2" />

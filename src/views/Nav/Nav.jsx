@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { StoreContext } from '../../store/StoreProvider';
@@ -14,6 +14,15 @@ const routerLinks = [
 
 const Nav = () => {
     const { isOpenMenu, setIsOpenMenu, setPathName, setTypeOfBranch } = useContext(StoreContext);
+
+    const handleScroll = () => {
+        if (window.scroll) {
+            setIsOpenMenu(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    });
 
     const handleCloseNav = (e) => {
         setIsOpenMenu(!isOpenMenu);

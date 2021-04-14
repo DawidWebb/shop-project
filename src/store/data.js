@@ -6,8 +6,6 @@ const Data = () => {
 
     const dataA = require('../store/db.json');
 
-    console.log(dataA.parentCategories);
-
     return <></>;
 };
 
