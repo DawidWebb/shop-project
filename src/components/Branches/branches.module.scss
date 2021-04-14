@@ -19,6 +19,7 @@
     cursor: pointer;
     text-align: center;
     transition: 0.4s;
+    transform: skew(-10deg);
     &:hover {
         transform: scale(1.1);
     }

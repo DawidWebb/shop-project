@@ -1,0 +1,54 @@
+@import '../../components/Root/common.scss';
+
+.wrapper {
+    width: 80vw;
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: $text-first-color;
+    border: 1px solid $third-color;
+    text-align: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .agreed {
+            display: flex;
+            margin-bottom: 20px;
+            input {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+        }
+        .formItem {
+            margin: 10px auto;
+            input {
+                height: 40px;
+                width: 240px;
+            }
+        }
+        .formButton {
+            margin: 20px auto;
+            button {
+                width: 100px;
+                padding: 5px;
+                background-color: $basic-color;
+                color: $text-first-color;
+                border: none;
+                &:hover {
+                    background-color: $third-color;
+                    color: black;
+                }
+            }
+        }
+        .confirmation {
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        width: 40vw;
+        height: 60vh;
+    }
+}

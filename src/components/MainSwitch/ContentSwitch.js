@@ -11,6 +11,7 @@ import ContactPage from '../../views/ContactPage/ContactPage';
 import ChartSite from '../../views/Chart/ChartSite';
 import OrderSite from '../../views/OrderSite/OrderSite';
 import AboutCompany from '../../views/AboutCompany/AboutCompany';
+import CookiesPage from '../../views/CookiesPage/CookiesPage';
 
 const ContentSwitch = () => {
     const { pathName } = useContext(StoreContext);
@@ -28,6 +29,7 @@ const ContentSwitch = () => {
                 <Route component={ChartSite} path="/shopping-chart" />
                 <Route component={OrderSite} path="/order" />
                 <Route component={AboutCompany} path="/about" />
+                <Route component={CookiesPage} path="/cookie" />
                 <Redirect from="*" to="/" />
             </Switch>
         </main>

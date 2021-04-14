@@ -15,7 +15,7 @@ const Header = () => {
     };
     return (
         <div className={styles.headerContainer}>
-            <div onClick={handleSetStartViev} className={styles.logoImage} />
+            <div className={styles.logoImage} />
             <NavLink to="/start" className={styles.logoName} />
             <div className={styles.headerMenu}>
                 <div className={styles.burgerDiv}>

@@ -7,7 +7,7 @@ import styles from './nav.module.scss';
 
 const routerLinks = [
     { id: 1, name: 'start', path: '/start' }, // exact: true  exact={link.exact ? link.exact : false}
-    { id: 2, name: 'logowanie', path: '/login' },
+    { id: 2, name: 'logowanie', path: '/' },
     { id: 3, name: 'kontakt', path: '/contact' },
     { id: 4, name: 'pomoc', path: '/help' },
 ];

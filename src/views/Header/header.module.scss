@@ -8,14 +8,15 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
     .logoImage {
-        flex-basis: 31%;
         height: 80px;
-        margin: 20px 0px 0px 20px;
+        width: 120px;
+        transform: skew(-15deg);
+        margin: 20px 0px 0px 60px;
         background-image: url(../../assets/img/baner_gorny.jpg);
         background-size: cover;
     }
     .logoName {
-        flex-basis: 31%;
+        flex-basis: 20%;
         height: 100px;
         background-image: url(../../assets/img/logo.PNG);
         background-size: contain;

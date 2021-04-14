@@ -91,7 +91,7 @@ const Footer = () => {
                     <Link to="/start">Dostawa</Link>
                 </div>
                 <div>
-                    <Link to="/start">Polityka cookies</Link>
+                    <Link to="/cookie">Polityka cookies</Link>
                 </div>
                 <div>
                     <Link to="/start">Zwroty i reklamacje</Link>
