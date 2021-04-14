@@ -1,0 +1,124 @@
+@import '../Root/common.scss';
+
+.branchSection {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+        text-decoration: none;
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-direction: row;
+    }
+}
+.branchCatrgories {
+    flex-basis: 100%;
+
+    .branchList {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        li {
+            flex-basis: 35%;
+            margin: 5px auto;
+            padding: 5px;
+            list-style: none;
+            border: 1px solid $basic-color;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                background-color: $basic-color;
+                color: $text-first-color;
+            }
+        }
+    }
+
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-basis: 15%;
+        .branchList {
+            display: block;
+        }
+        li {
+            font-size: $m-font-size * 1.2;
+            margin: 10px auto;
+        }
+    }
+}
+
+.branchProducts {
+    flex-basis: 95%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    // border: 1px solid red;
+
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-basis: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.selected {
+    background-color: $basic-color;
+    color: $text-first-color;
+}
+// For category
+
+.category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $basic-color;
+    .categoryName {
+        text-align: center;
+        font-weight: 700;
+    }
+    .categoryImage {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+        cursor: pointer;
+        background-image: url(../../assets/img/package.png);
+        background-position: center;
+        background-size: cover;
+        // img {
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    }
+    .categoryIcons {
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        .categoryIcon {
+            &:hover {
+                color: $basic-color;
+            }
+        }
+    }
+    .categoryPrice {
+        text-align: center;
+        margin: 20px auto;
+        padding: 0 20px;
+        font-weight: 500;
+        color: $first-color;
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        .categoryName {
+            font-size: $l-font-size;
+        }
+        .categoryImage {
+            height: 280px;
+        }
+
+        .categoryPrice {
+            font-size: $l-font-size;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import '../../components/Root/common.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 20px auto;
+
+    .clientInfo {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: lighten(grey, 45%);
+    }
+    .productsInfo {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: lighten(grey, 45%);
+        h3 {
+            text-align: center;
+        }
+        .table {
+            width: 100%;
+            tr {
+                th {
+                    margin: 1px;
+                    padding: 4px;
+                    font-size: $s-font-size;
+                    text-align: center;
+                    border: 2px solid $text-second-color;
+                }
+                td {
+                    margin: 2px;
+                    text-align: center;
+                    font-size: $s-font-size;
+                }
+            }
+        }
+    }
+    .finalPrice {
+        margin: 30px;
+        div {
+            display: flex;
+            justify-content: space-around;
+            font-weight: 700;
+            color: $first-color;
+        }
+    }
+    .payButton {
+        margin: 10px;
+        align-self: center;
+        button {
+            padding: 10px 20px;
+            border: none;
+            font-size: $m-font-size;
+            background-color: $basic-color;
+            color: $text-first-color;
+            transition: 0.4s;
+            &:hover {
+                background-color: $second-color;
+            }
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .button {
+            flex-basis: 100%;
+        }
+        .clientInfo,
+        .productsInfo {
+            flex-basis: 49%;
+        }
+        .payButton {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

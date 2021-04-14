@@ -1,0 +1,40 @@
+@import '../../components/Root/common.scss';
+
+.infoContainer {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        p {
+            font-size: $m-font-size * 1.2;
+        }
+    }
+}
+.infoPath {
+    display: flex;
+
+    a {
+        display: block;
+        width: 75px;
+        padding: 2px 5px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: $first-color;
+        font-weight: 700;
+        transition: 0.4s;
+        &:hover {
+            border-bottom: 2px solid $basic-color;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        p,
+        a {
+            width: 100px;
+            font-size: $m-font-size;
+        }
+    }
+}
+.selected {
+    border: 1px solid $basic-color;
+}

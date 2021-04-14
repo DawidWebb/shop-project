@@ -1,0 +1,19 @@
+@import '../Root/common.scss';
+
+.upButton {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 10px 20px;
+    border: none;
+    font-size: $m-font-size/1.2;
+    background-color: $third-color;
+    color: black;
+    opacity: 0.5;
+    transition: 0.4s;
+    &:hover {
+        opacity: 1;
+        background-color: $basic-color;
+        color: $text-first-color;
+    }
+}

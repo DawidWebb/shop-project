@@ -1,0 +1,13 @@
+@import '../Root/common.scss';
+
+.ReturnButton {
+    padding: 10px 20px;
+    border: none;
+    font-size: $m-font-size/1.2;
+    background-color: $third-color;
+    color: black;
+    &:hover {
+        background-color: $basic-color;
+        color: $text-first-color;
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../components/Root/common.scss';
+
+.asideContainer {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.search {
+    flex-basis: 80%;
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            @include input;
+        }
+        button {
+            @include button;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-basis: 40%;
+    }
+}
+
+.chart {
+    flex-basis: 80%;
+    flex-basis: 40%;
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        height: 50%;
+    }
+}

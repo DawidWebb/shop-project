@@ -1,0 +1,43 @@
+@import '../../Root/common.scss';
+
+.categoryModal {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: $text-first-color;
+    z-index: 10;
+    .categoryIcons {
+        display: none;
+    }
+    form {
+        display: flex;
+        justify-content: space-around;
+        input {
+            font-size: $m-font-size;
+            color: #000;
+        }
+    }
+    .buttonsSection {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        button {
+            padding: 10px 15px;
+            font-size: $m-font-size/1.2;
+            border: none;
+            background-color: $third-color;
+            transition: 0.3s;
+            &:hover {
+                background-color: $basic-color;
+                color: $text-first-color;
+            }
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        top: 10%;
+        width: 500px;
+    }
+}

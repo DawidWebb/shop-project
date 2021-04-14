@@ -1,0 +1,71 @@
+@import '../../components/Root/common.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    border-top: 1px solid $basic-color;
+    .adress {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+
+        .contact,
+        .mail,
+        .phone {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .info,
+    .shop,
+    .additional {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px auto;
+        padding-top: 20px;
+        border-top: 1px solid $third-color;
+        a {
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            color: $text-second-color;
+            transition: 0.3s;
+            &:hover {
+                color: $basic-color;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .additional {
+    }
+    .social {
+    }
+    .signature {
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 60px 20px 60px;
+        background-color: lighten(grey, 35%);
+        border: none;
+
+        .adress,
+        .info,
+        .shop {
+            flex-basis: 20%;
+        }
+        .info,
+        .shop,
+        .additional {
+            border: none;
+        }
+    }
+}

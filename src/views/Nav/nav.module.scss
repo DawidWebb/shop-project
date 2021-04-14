@@ -1,0 +1,55 @@
+@import '../../components/Root/common.scss';
+
+.container {
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    width: 50%;
+    padding: 90px 30px;
+    background-color: $third-color;
+    transition: 0.5s;
+    z-index: 100;
+    .nav {
+        .ul {
+            list-style: none;
+            li {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: $m-font-size;
+                a {
+                    text-decoration: none;
+                    color: $first-color;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        position: static;
+        flex-basis: 60%;
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                li {
+                    flex-basis: 25%;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                li:hover {
+                    border-bottom: 2px solid $basic-color;
+                }
+            }
+        }
+    }
+}
+.navVisable {
+    left: 0;
+}
+.navUnVisible {
+    left: -100%;
+}

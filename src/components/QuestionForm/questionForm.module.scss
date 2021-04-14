@@ -1,0 +1,55 @@
+@import '../Root/common.scss';
+
+.wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 90vh;
+    background-color: $text-first-color;
+    border: 1px solid $third-color;
+    text-align: center;
+    p {
+        margin-top: 40px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+        }
+        .inputField {
+            width: 200px;
+            height: 25px;
+        }
+        .buttons {
+            flex-direction: row;
+            button:nth-child(1) {
+                background-color: $basic-color;
+                color: $text-first-color;
+                &:hover {
+                }
+            }
+            button:nth-child(2) {
+                background-color: $third-color;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            button {
+                margin: 10px;
+                padding: 5px 10px;
+                border: none;
+            }
+        }
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        width: 30vw;
+        height: 70vh;
+    }
+}

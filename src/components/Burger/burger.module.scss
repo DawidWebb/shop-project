@@ -1,0 +1,44 @@
+@import '../Root/common.scss';
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        display: none;
+    }
+    .lineOne {
+        position: absolute;
+        top: 0;
+        width: 35px;
+        border-bottom: 4px solid $basic-color;
+        transition: 0.3s;
+    }
+    .lineTwo {
+        position: absolute;
+        top: 50%;
+        width: 35px;
+        border-bottom: 4px solid $basic-color;
+        transition: 0.5s;
+    }
+    .lineThree {
+        position: absolute;
+        top: 100%;
+        width: 35px;
+        border-top: 4px solid $basic-color;
+        border-bottom: none;
+        transition: 0.3s;
+    }
+}
+.rotate {
+    transform: translateY(15px) rotate(45deg);
+}
+.visible {
+    display: none;
+}
+.rotateOne {
+    transform: translateY(-15px) rotate(-45deg);
+}

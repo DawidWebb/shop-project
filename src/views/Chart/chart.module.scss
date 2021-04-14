@@ -1,0 +1,29 @@
+@import '../../components/Root/common.scss';
+
+.shoppingCart {
+    width: 240px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $l-font-size;
+    border: 0.5px solid $basic-color;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+    div {
+        text-decoration: none;
+        font-size: $s-font-size;
+        margin-left: 20px;
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        width: 440px;
+        div {
+            font-size: $l-font-size;
+        }
+    }
+    &:hover {
+        background-color: $basic-color;
+        color: $text-first-color;
+    }
+}

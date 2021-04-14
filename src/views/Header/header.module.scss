@@ -1,0 +1,37 @@
+@import '../../components/Root/common.scss';
+
+.headerContainer {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .logoImage {
+        flex-basis: 31%;
+        height: 80px;
+        margin: 20px 0px 0px 20px;
+        background-image: url(../../assets/img/baner_gorny.jpg);
+        background-size: cover;
+    }
+    .logoName {
+        flex-basis: 31%;
+        height: 100px;
+        background-image: url(../../assets/img/logo.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .headerMenu {
+        flex-basis: 20%;
+        height: 40px;
+    }
+    @media screen and (min-width: map-get($breakpoins, xl)) {
+        .logoImage {
+            flex-basis: 15%;
+            height: 120px;
+        }
+        .headerMenu {
+            flex-basis: 50%;
+        }
+    }
+}
