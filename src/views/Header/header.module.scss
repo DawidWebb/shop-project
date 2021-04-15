@@ -11,15 +11,15 @@
         height: 80px;
         width: 120px;
         transform: skew(-15deg);
-        margin: 20px 0px 0px 60px;
+        margin: 10px 0px 0px 20px;
         background-image: url(../../assets/img/baner_gorny.jpg);
         background-size: cover;
     }
     .logoName {
-        flex-basis: 20%;
-        height: 100px;
+        flex-basis: 30%;
+        height: 80px;
         background-image: url(../../assets/img/logo.PNG);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .headerMenu {
@@ -30,6 +30,10 @@
         .logoImage {
             flex-basis: 15%;
             height: 120px;
+        }
+        .logoName {
+            flex-basis: 20%;
+            height: 100px;
         }
         .headerMenu {
             flex-basis: 50%;
